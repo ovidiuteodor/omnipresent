@@ -14,24 +14,34 @@
 </head>
 
 <body>
-    <main>
+    <main class="auth-page">
         <a href="index.html" class="logo">Omnipresent</a>
-        <h1>Sign in to Omnipresent</h1>
-        <form>
-            <label for="email">Email</label>
-            <input type="email" required id="email">
-            <label for="password">Password</label>
-            <input type="password" required id="password">
-            <input type="checkbox" id="remember-me">
-            <label for="remember-me">Remember me</label>
-            <a href="#">Forgot password?</a>
-            <button type="submit">Sign in</button>
-        </form>
-        <p>or continue with</p>
-        <button type="button">Google</button>
-        <p>Don't have an account?
-            <a href="#">Sign up</a>
-        </p>
+        <div class="auth-card">
+            <h1>Sign in to Omnipresent</h1>
+            <form>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" required id="email">
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" required id="password">
+                </div>
+                <div class="form-row">
+                    <div class="remember">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn-primary">Sign in</button>
+            </form>
+            <p>or continue with</p>
+            <button type="button">Google</button>
+            <p>Don't have an account?
+                <a href="#">Sign up</a>
+            </p>
+        </div>
     </main>
 </body>
 
