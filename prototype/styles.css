@@ -326,6 +326,29 @@ button {
     font-weight: 600;
 }
 
+.rating-panel {
+    margin-top: 32px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.rating-row input {
+    flex: 1;
+    accent-color: var(--accent);
+    padding: 0;
+    border: none;
+}
+
+#rating-value {
+    font-size: 32px;
+    font-weight: 700;
+    min-width: 48px;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
