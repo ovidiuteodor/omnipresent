@@ -346,7 +346,11 @@ button {
 #rating-value {
     font-size: 32px;
     font-weight: 700;
-    min-width: 48px;
+    min-width: 56px;
+}
+
+#rating-label {
+    min-width: 112px;
 }
 
 a:focus-visible,
