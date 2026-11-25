@@ -56,14 +56,15 @@
                         <option value="on-hold">On Hold</option>
                         <option value="dropped">Dropped</option>
                     </select>
-                    <button class="btn-primary">Rate</button>
+                    <button aria-controls="rating-panel" class="btn-primary" id="rate-button"
+                        aria-expanded="false">Rate</button>
                     <button aria-label="Add to favorites">♡ Favorite</button>
                     <button>Add to list</button>
                     <button>Write review</button>
                 </div>
             </div>
         </section>
-        <section class="panel rating-panel">
+        <section class="panel rating-panel" id="rating-panel" hidden>
             <h2>Your rating</h2>
             <div class="rating-row">
                 <label for="rating">Overall</label>
