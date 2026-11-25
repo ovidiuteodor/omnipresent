@@ -247,6 +247,85 @@ button {
     border-bottom-color: var(--accent);
 }
 
+.overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.panel-wide {
+    grid-column: 1 / -1;
+}
+
+.panel h2 {
+    font-size: 20px;
+    margin: 0 0 16px;
+}
+
+.panel p {
+    margin: 0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 8px 16px;
+    margin: 0;
+}
+
+.info dt {
+    color: var(--text-muted);
+}
+
+.info dd {
+    margin: 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tags li {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.muted {
+    color: var(--text-muted);
+}
+
+.criteria {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.criteria li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.criteria span {
+    font-weight: 600;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -269,5 +348,25 @@ select:focus-visible {
 
     main {
         padding: 24px 16px;
+    }
+
+    .game-header {
+        flex-direction: column;
+    }
+
+    .cover {
+        width: 120px;
+    }
+
+    .overview {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        overflow-x: auto;
+    }
+
+    .tabs a {
+        white-space: nowrap;
     }
 }
