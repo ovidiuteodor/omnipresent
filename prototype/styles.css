@@ -353,6 +353,40 @@ button {
     min-width: 112px;
 }
 
+.nav-item {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 240px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+}
+
+.nav-item:hover .submenu,
+.nav-item:focus-within .submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.submenu p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.submenu ul {
+    flex-direction: column;
+    gap: 8px;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
